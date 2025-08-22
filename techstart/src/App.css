@@ -1,0 +1,18 @@
+@import "tailwindcss";
+body{
+    background-color: #1f2d3d;
+}
+@keyframes bounce-once {
+  0%, 100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-hover:hover {
+  animation: bounce-once 2s;
+}
